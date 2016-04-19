@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import os
-import sys
 import numpy as np
 import argparse
 from kaffe import KaffeError, print_stderr

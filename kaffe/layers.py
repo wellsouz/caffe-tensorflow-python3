@@ -51,7 +51,7 @@ LAYER_DESCRIPTORS = {
     'Threshold': shape_identity,
 }
 
-LAYER_TYPES = LAYER_DESCRIPTORS.keys()
+LAYER_TYPES = list(LAYER_DESCRIPTORS.keys())
 
 LayerType = type('LayerType', (), {t: t for t in LAYER_TYPES})
 

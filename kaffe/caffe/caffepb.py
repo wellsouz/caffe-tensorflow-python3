@@ -1003,7 +1003,7 @@ _FILLERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='type', full_name='caffe.FillerParameter.type', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("constant", "utf-8"),
+      has_default_value=True, default_value=str("constant", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1081,7 +1081,7 @@ _NETPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='caffe.NetParameter.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1165,7 +1165,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='net', full_name='caffe.SolverParameter.net', index=0,
       number=24, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1179,7 +1179,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='train_net', full_name='caffe.SolverParameter.train_net', index=2,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1284,7 +1284,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='lr_policy', full_name='caffe.SolverParameter.lr_policy', index=17,
       number=8, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1319,7 +1319,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='regularization_type', full_name='caffe.SolverParameter.regularization_type', index=22,
       number=29, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("L2", "utf-8"),
+      has_default_value=True, default_value=str("L2", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1354,7 +1354,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='snapshot_prefix', full_name='caffe.SolverParameter.snapshot_prefix', index=27,
       number=15, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1396,7 +1396,7 @@ _SOLVERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='type', full_name='caffe.SolverParameter.type', index=33,
       number=40, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("SGD", "utf-8"),
+      has_default_value=True, default_value=str("SGD", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1476,7 +1476,7 @@ _SOLVERSTATE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='learned_net', full_name='caffe.SolverState.learned_net', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1616,7 +1616,7 @@ _PARAMSPEC = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='caffe.ParamSpec.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1666,14 +1666,14 @@ _LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='caffe.LayerParameter.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='type', full_name='caffe.LayerParameter.type', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2100,7 +2100,7 @@ _TRANSFORMATIONPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='mean_file', full_name='caffe.TransformationParameter.mean_file', index=3,
       number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2613,7 +2613,7 @@ _DATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.DataParameter.source', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2648,7 +2648,7 @@ _DATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='mean_file', full_name='caffe.DataParameter.mean_file', index=5,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3000,7 +3000,7 @@ _HDF5DATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.HDF5DataParameter.source', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3042,7 +3042,7 @@ _HDF5OUTPUTPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='file_name', full_name='caffe.HDF5OutputParameter.file_name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3099,7 +3099,7 @@ _IMAGEDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.ImageDataParameter.source', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3155,7 +3155,7 @@ _IMAGEDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='mean_file', full_name='caffe.ImageDataParameter.mean_file', index=8,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3176,7 +3176,7 @@ _IMAGEDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='root_folder', full_name='caffe.ImageDataParameter.root_folder', index=11,
       number=12, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("", "utf-8"),
+      has_default_value=True, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3204,7 +3204,7 @@ _INFOGAINLOSSPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.InfogainLossParameter.source', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3670,21 +3670,21 @@ _PYTHONPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='module', full_name='caffe.PythonParameter.module', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='layer', full_name='caffe.PythonParameter.layer', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='param_str', full_name='caffe.PythonParameter.param_str', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("", "utf-8"),
+      has_default_value=True, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4095,7 +4095,7 @@ _WINDOWDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.WindowDataParameter.source', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4109,7 +4109,7 @@ _WINDOWDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='mean_file', full_name='caffe.WindowDataParameter.mean_file', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4165,7 +4165,7 @@ _WINDOWDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='crop_mode', full_name='caffe.WindowDataParameter.crop_mode', index=10,
       number=11, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("warp", "utf-8"),
+      has_default_value=True, default_value=str("warp", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4179,7 +4179,7 @@ _WINDOWDATAPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='root_folder', full_name='caffe.WindowDataParameter.root_folder', index=12,
       number=13, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("", "utf-8"),
+      has_default_value=True, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4265,7 +4265,7 @@ _V1LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='caffe.V1LayerParameter.name', index=2,
       number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4575,14 +4575,14 @@ _V0LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='caffe.V0LayerParameter.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='type', full_name='caffe.V0LayerParameter.type', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4687,7 +4687,7 @@ _V0LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='source', full_name='caffe.V0LayerParameter.source', index=16,
       number=16, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4701,7 +4701,7 @@ _V0LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='meanfile', full_name='caffe.V0LayerParameter.meanfile', index=18,
       number=18, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=str("", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4785,7 +4785,7 @@ _V0LAYERPARAMETER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='det_crop_mode', full_name='caffe.V0LayerParameter.det_crop_mode', index=30,
       number=59, type=9, cpp_type=9, label=1,
-      has_default_value=True, default_value=unicode("warp", "utf-8"),
+      has_default_value=True, default_value=str("warp", "utf-8"),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -5111,356 +5111,297 @@ DESCRIPTOR.message_types_by_name['V1LayerParameter'] = _V1LAYERPARAMETER
 DESCRIPTOR.message_types_by_name['V0LayerParameter'] = _V0LAYERPARAMETER
 DESCRIPTOR.message_types_by_name['PReLUParameter'] = _PRELUPARAMETER
 
-class BlobShape(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class BlobShape(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _BLOBSHAPE
 
   # @@protoc_insertion_point(class_scope:caffe.BlobShape)
 
-class BlobProto(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class BlobProto(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _BLOBPROTO
 
   # @@protoc_insertion_point(class_scope:caffe.BlobProto)
 
-class BlobProtoVector(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class BlobProtoVector(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _BLOBPROTOVECTOR
 
   # @@protoc_insertion_point(class_scope:caffe.BlobProtoVector)
 
-class Datum(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class Datum(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _DATUM
 
   # @@protoc_insertion_point(class_scope:caffe.Datum)
 
-class FillerParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class FillerParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _FILLERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.FillerParameter)
 
-class NetParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class NetParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _NETPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.NetParameter)
 
-class SolverParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SolverParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SOLVERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.SolverParameter)
 
-class SolverState(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SolverState(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SOLVERSTATE
 
   # @@protoc_insertion_point(class_scope:caffe.SolverState)
 
-class NetState(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class NetState(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _NETSTATE
 
   # @@protoc_insertion_point(class_scope:caffe.NetState)
 
-class NetStateRule(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class NetStateRule(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _NETSTATERULE
 
   # @@protoc_insertion_point(class_scope:caffe.NetStateRule)
 
-class ParamSpec(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ParamSpec(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _PARAMSPEC
 
   # @@protoc_insertion_point(class_scope:caffe.ParamSpec)
 
-class LayerParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class LayerParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _LAYERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.LayerParameter)
 
-class TransformationParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class TransformationParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _TRANSFORMATIONPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.TransformationParameter)
 
-class LossParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class LossParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _LOSSPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.LossParameter)
 
-class AccuracyParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class AccuracyParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _ACCURACYPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.AccuracyParameter)
 
-class ArgMaxParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ArgMaxParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _ARGMAXPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ArgMaxParameter)
 
-class ConcatParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ConcatParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _CONCATPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ConcatParameter)
 
-class BatchNormParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class BatchNormParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _BATCHNORMPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.BatchNormParameter)
 
-class BiasParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class BiasParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _BIASPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.BiasParameter)
 
-class ContrastiveLossParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ContrastiveLossParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _CONTRASTIVELOSSPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ContrastiveLossParameter)
 
-class ConvolutionParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ConvolutionParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _CONVOLUTIONPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ConvolutionParameter)
 
-class CropParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class CropParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _CROPPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.CropParameter)
 
-class DataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class DataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _DATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.DataParameter)
 
-class DropoutParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class DropoutParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _DROPOUTPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.DropoutParameter)
 
-class DummyDataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class DummyDataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _DUMMYDATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.DummyDataParameter)
 
-class EltwiseParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class EltwiseParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _ELTWISEPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.EltwiseParameter)
 
-class ELUParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ELUParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _ELUPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ELUParameter)
 
-class EmbedParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class EmbedParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _EMBEDPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.EmbedParameter)
 
-class ExpParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ExpParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _EXPPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ExpParameter)
 
-class FlattenParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class FlattenParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _FLATTENPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.FlattenParameter)
 
-class HDF5DataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class HDF5DataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _HDF5DATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.HDF5DataParameter)
 
-class HDF5OutputParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class HDF5OutputParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _HDF5OUTPUTPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.HDF5OutputParameter)
 
-class HingeLossParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class HingeLossParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _HINGELOSSPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.HingeLossParameter)
 
-class ImageDataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ImageDataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _IMAGEDATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ImageDataParameter)
 
-class InfogainLossParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class InfogainLossParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _INFOGAINLOSSPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.InfogainLossParameter)
 
-class InnerProductParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class InnerProductParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _INNERPRODUCTPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.InnerProductParameter)
 
-class InputParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class InputParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _INPUTPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.InputParameter)
 
-class LogParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class LogParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _LOGPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.LogParameter)
 
-class LRNParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class LRNParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _LRNPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.LRNParameter)
 
-class MemoryDataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class MemoryDataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _MEMORYDATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.MemoryDataParameter)
 
-class MVNParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class MVNParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _MVNPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.MVNParameter)
 
-class PoolingParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class PoolingParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _POOLINGPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.PoolingParameter)
 
-class PowerParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class PowerParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _POWERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.PowerParameter)
 
-class PythonParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class PythonParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _PYTHONPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.PythonParameter)
 
-class ReductionParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ReductionParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _REDUCTIONPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ReductionParameter)
 
-class ReLUParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ReLUParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _RELUPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ReLUParameter)
 
-class ReshapeParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ReshapeParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _RESHAPEPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ReshapeParameter)
 
-class ScaleParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ScaleParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SCALEPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ScaleParameter)
 
-class SigmoidParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SigmoidParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SIGMOIDPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.SigmoidParameter)
 
-class SliceParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SliceParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SLICEPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.SliceParameter)
 
-class SoftmaxParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SoftmaxParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SOFTMAXPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.SoftmaxParameter)
 
-class TanHParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class TanHParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _TANHPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.TanHParameter)
 
-class TileParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class TileParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _TILEPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.TileParameter)
 
-class ThresholdParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class ThresholdParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _THRESHOLDPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.ThresholdParameter)
 
-class WindowDataParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class WindowDataParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _WINDOWDATAPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.WindowDataParameter)
 
-class SPPParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class SPPParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _SPPPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.SPPParameter)
 
-class V1LayerParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class V1LayerParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _V1LAYERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.V1LayerParameter)
 
-class V0LayerParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class V0LayerParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _V0LAYERPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.V0LayerParameter)
 
-class PReLUParameter(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+class PReLUParameter(_message.Message, metaclass=_reflection.GeneratedProtocolMessageType):
   DESCRIPTOR = _PRELUPARAMETER
 
   # @@protoc_insertion_point(class_scope:caffe.PReLUParameter)
