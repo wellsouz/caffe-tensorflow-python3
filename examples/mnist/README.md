@@ -34,3 +34,11 @@ with tf.Session() as sesh:
     # Forward pass
     output = sesh.run(net.get_output(), ...)
 ```
+
+#### Standalone model file:
+
+You can save a standalone GraphDef model file as follows:
+
+    $ ./convert.py examples/mnist/lenet.prototxt --caffemodel examples/mnist/lenet_iter_10000.caffemodel --standalone-output-path=mynet.pb
+
+This generates a protobuf file named `mynet.pb` containing the model's graph and parameters. The [TensorFlow Image Recognition tutorial](https://www.tensorflow.org/versions/r0.11/tutorials/image_recognition/index.html) shows how to use models constructed in this way in [Python](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/models/image/imagenet) or [C++](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/label_image).

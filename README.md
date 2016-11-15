@@ -13,6 +13,8 @@ The output consists of two files:
 1. A data file (in NumPy's native format) containing the model's learned parameters.
 2. A Python class that constructs the model's graph.
 
+Alternatively, you can save a standalone GraphDef model file containing the model's graph and learned parameters. 
+
 ### Examples
 
 See the [examples](examples/) folder for more details.
