@@ -50,7 +50,6 @@ def convert(def_path, caffemodel_path, data_output_path, code_output_path, stand
                 data = transformer.transform_data()
                 print_stderr('Saving data...')
                 data_output_path = os.path.join(temp_folder, filename) + '.npy'
-                print data_output_path
                 with open(data_output_path, 'wb') as data_out:
                     np.save(data_out, data)
 
