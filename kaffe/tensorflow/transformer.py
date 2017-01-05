@@ -281,5 +281,7 @@ class TensorFlowTransformer(object):
             mapper = TensorFlowMapper(self.graph)
             chains = mapper.map()
             emitter = TensorFlowEmitter()
+            if not self.graph.name:
+                self.graph.name = 'MyNet'
             self.source = emitter.emit(self.graph.name, chains)
         return self.source
