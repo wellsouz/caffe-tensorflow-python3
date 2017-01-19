@@ -8,19 +8,10 @@ class CaffeResolver(object):
 
     def import_caffe(self):
         self.caffe = None
-        try:
-            # Try to import PyCaffe first
-            import caffe
-            self.caffe = caffe
-        except ImportError:
-            # Fall back to the protobuf implementation
-            from . import caffepb
-            self.caffepb = caffepb
-            show_fallback_warning()
-        if self.caffe:
-            # Use the protobuf code from the imported distribution.
-            # This way, Caffe variants with custom layers will work.
-            self.caffepb = self.caffe.proto.caffe_pb2
+        # Fall back to the protobuf implementation
+        from . import caffepb
+        self.caffepb = caffepb
+        show_fallback_warning()
         self.NetParameter = self.caffepb.NetParameter
 
     def has_pycaffe(self):

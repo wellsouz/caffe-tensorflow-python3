@@ -31,7 +31,7 @@ def convert(def_path, caffemodel_path, data_output_path, code_output_path, phase
                 np.save(data_out, data)
         if code_output_path:
             print_stderr('Saving source...')
-            with open(code_output_path, 'wb') as src_out:
+            with open(code_output_path, 'w') as src_out:
                 src_out.write(transformer.transform_source())
         print_stderr('Done.')
     except KaffeError as err:

@@ -1,6 +1,7 @@
 import re
 import numbers
 from collections import namedtuple
+from .caffe import caffepb
 
 from .shapes import *
 
@@ -51,6 +52,48 @@ LAYER_DESCRIPTORS = {
     'Threshold': shape_identity,
 }
 
+V1_TO_NEW = {
+    35: 'AbsVal',
+    1: 'Accuracy',
+    30: 'ArgMax',
+    2: 'BNLL',
+    3: 'Concat',
+    37: 'ContrastiveLoss',
+    4: 'Convolution',
+    5: 'Data',
+    39: 'Deconvolution',
+    6: 'Dropout',
+    32: 'DummyData',
+    7: 'EuclideanLoss',
+    25: 'Eltwise',
+    38: 'Exp',
+    8: 'Flatten',
+    9: 'HDF5Data',
+    10: 'HDF5Output',
+    28: 'HingeLoss',
+    11: 'Im2col',
+    12: 'ImageData',
+    13: 'InfogainLoss',
+    14: 'InnerProduct',
+    15: 'LRN',
+    29: 'MemoryData',
+    16: 'MultinomialLogisticLoss',
+    34: 'MVN',
+    17: 'Pooling',
+    26: 'Power',
+    18: 'ReLU',
+    19: 'Sigmoid',
+    27: 'SigmoidCrossEntropyLoss',
+    36: 'Silence',
+    20: 'Softmax',
+    21: 'SoftmaxLoss',
+    22: 'Split',
+    33: 'Slice',
+    23: 'TanH',
+    24: 'WindowData',
+    31: 'Threshold',
+}
+
 LAYER_TYPES = list(LAYER_DESCRIPTORS.keys())
 
 LayerType = type('LayerType', (), {t: t for t in LAYER_TYPES})
@@ -58,7 +101,10 @@ LayerType = type('LayerType', (), {t: t for t in LAYER_TYPES})
 class NodeKind(LayerType):
 
     @staticmethod
-    def map_raw_kind(kind):
+    def map_raw_kind(layer):
+        kind = layer.type
+        if isinstance(layer, caffepb.V1LayerParameter):
+            kind = V1_TO_NEW[layer.type]
         if kind in LAYER_TYPES:
             return kind
         return None

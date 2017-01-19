@@ -1,6 +1,6 @@
 from google.protobuf import text_format
 
-from .caffe import get_caffe_resolver
+from .caffe import get_caffe_resolver, caffepb
 from .errors import KaffeError, print_stderr
 from .layers import LayerAdapter, LayerType, NodeKind, NodeDispatch
 from .shapes import TensorShape
@@ -114,15 +114,16 @@ class Graph(object):
         return key in self.node_lut
 
     def __str__(self):
-        hdr = '{:<20} {:<30} {:>20} {:>20}'.format('Type', 'Name', 'Param', 'Output')
+        hdr = '{:<20} {:<30} {:>20} {:>20}'.format(
+            'Type', 'Name', 'Param', 'Output')
         s = [hdr, '-' * 94]
         for node in self.topologically_sorted():
             # If the node has learned parameters, display the first one's shape.
             # In case of convolutions, this corresponds to the weights.
-            data_shape = node.data[0].shape if node.data else '--'
-            out_shape = node.output_shape or '--'
-            s.append('{:<20} {:<30} {:>20} {:>20}'.format(node.kind, node.name, data_shape,
-                                                          tuple(out_shape)))
+            data_shape = str(node.data[0].shape) if node.data else '--'
+            out_shape = str(tuple(node.output_shape)) or '--'
+            s.append('{:<20} {:<30} {:>20} {:>20}'.format(
+                node.kind, node.name, data_shape, out_shape))
         return '\n'.join(s)
 
 
@@ -142,7 +143,7 @@ class GraphBuilder(object):
     def load(self):
         '''Load the layer definitions from the prototxt.'''
         self.params = get_caffe_resolver().NetParameter()
-        with open(self.def_path, 'rb') as def_file:
+        with open(self.def_path, 'r') as def_file:
             text_format.Merge(def_file.read(), self.params)
 
     def filter_layers(self, layers):
@@ -171,7 +172,7 @@ class GraphBuilder(object):
 
     def make_node(self, layer):
         '''Create a graph node for the given layer.'''
-        kind = NodeKind.map_raw_kind(layer.type)
+        kind = NodeKind.map_raw_kind(layer)
         if kind is None:
             raise KaffeError('Unknown layer type encountered: %s' % layer.type)
         # We want to use the layer's top names (the "output" names), rather than the

@@ -278,7 +278,7 @@ class GraphBuilder(object):
         return filtered_layers
 
     def make_node(self, layer):
-        kind = NodeKind.map_raw_kind(layer.type)
+        kind = NodeKind.map_raw_kind(layer)
         if kind is None:
             raise KaffeError('Unknown layer type encountered: %s'%layer.type)
         return Node(layer.name, kind, layer=layer)
