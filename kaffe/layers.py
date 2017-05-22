@@ -1,7 +1,7 @@
 import re
 import numbers
 from collections import namedtuple
-from .caffe import caffepb
+from .caffe import caffe_pb2
 
 from .shapes import *
 
@@ -103,7 +103,7 @@ class NodeKind(LayerType):
     @staticmethod
     def map_raw_kind(layer):
         kind = layer.type
-        if isinstance(layer, caffepb.V1LayerParameter):
+        if isinstance(layer, caffe_pb2.V1LayerParameter):
             kind = V1_TO_NEW[layer.type]
         if kind in LAYER_TYPES:
             return kind

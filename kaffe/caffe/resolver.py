@@ -9,8 +9,8 @@ class CaffeResolver(object):
     def import_caffe(self):
         self.caffe = None
         # Fall back to the protobuf implementation
-        from . import caffepb
-        self.caffepb = caffepb
+        from . import caffe_pb2
+        self.caffepb = caffe_pb2
         show_fallback_warning()
         self.NetParameter = self.caffepb.NetParameter
 
