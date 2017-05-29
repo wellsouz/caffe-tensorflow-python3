@@ -14,8 +14,8 @@ class CaffeResolver(object):
             self.caffe = caffe
         except ImportError:
             # Fall back to the protobuf implementation
-            from . import caffepb
-            self.caffepb = caffepb
+            from . import caffe_pb2
+            self.caffepb = caffe_pb2
             show_fallback_warning()
         if self.caffe:
             # Use the protobuf code from the imported distribution.
