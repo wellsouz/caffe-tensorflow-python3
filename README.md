@@ -5,9 +5,8 @@ Convert [Caffe](https://github.com/BVLC/caffe/) models to [TensorFlow](https://g
 ## Usage with standalone model
 
 ### 1 - Install caffe-tensorflow
-    git clone https://github.com/linkfluence/caffe-tensorflow
-    # Optional: create a Python 2.7 env and activate it
-    # This fork has only be tested with Python 2.7
+    git clone https://github.com/dhaase-de/caffe-tensorflow-python3
+    # This fork was tested with Python 3.5
     
 ### 2 - (Optional) Switch to Tensorflow CPU
 You might bump into memory issues if you don't have enough memory. In this case just uninstall `tensorflow-gpu` and install `tensorflow`
