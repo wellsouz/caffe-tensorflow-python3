@@ -121,8 +121,8 @@ class Graph(object):
             # In case of convolutions, this corresponds to the weights.
             data_shape = node.data[0].shape if node.data else '--'
             out_shape = node.output_shape or '--'
-            s.append('{:<20} {:<30} {:>20} {:>20}'.format(node.kind, node.name, data_shape,
-                                                          tuple(out_shape)))
+            s.append('{:<20} {:<30} {:>20} {:>20}'.format(node.kind, node.name, str(data_shape),
+                                                          str(tuple(out_shape))))
         return '\n'.join(s)
 
 
@@ -189,10 +189,10 @@ class GraphBuilder(object):
         '''
         nodes = [Node(name, NodeKind.Data) for name in self.params.input]
         if len(nodes):
-            input_dim = map(int, self.params.input_dim)
+            input_dim = [int(value) for value in self.params.input_dim]
             if not input_dim:
                 if len(self.params.input_shape) > 0:
-                    input_dim = map(int, self.params.input_shape[0].dim)
+                    input_dim = [int(value) for value in self.params.input_shape[0].dim]
                 else:
                     raise KaffeError('Dimensions for input not specified.')
             for node in nodes:

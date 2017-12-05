@@ -38,7 +38,7 @@ class DataInjector(object):
         caffe = get_caffe_resolver().caffe
         net = caffe.Net(self.def_path, self.data_path, caffe.TEST)
         data = lambda blob: blob.data
-        self.params = [(k, map(data, v)) for k, v in net.params.items()]
+        self.params = [(k, [value.data for value in v]) for k, v in net.params.items()]
 
     def load_using_pb(self):
         data = get_caffe_resolver().NetParameter()
@@ -53,7 +53,7 @@ class DataInjector(object):
         for blob in layer.blobs:
             if len(blob.shape.dim):
                 dims = blob.shape.dim
-                c_o, c_i, h, w = map(int, [1] * (4 - len(dims)) + list(dims))
+                c_o, c_i, h, w = [int(value) for value in ([1] * (4 - len(dims)) + list(dims))]
             else:
                 c_o = blob.num
                 c_i = blob.channels
