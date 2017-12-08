@@ -142,7 +142,7 @@ class GraphBuilder(object):
     def load(self):
         '''Load the layer definitions from the prototxt.'''
         self.params = get_caffe_resolver().NetParameter()
-        with open(self.def_path, 'rb') as def_file:
+        with open(self.def_path, 'r') as def_file:
             text_format.Merge(def_file.read(), self.params)
 
     def filter_layers(self, layers):
