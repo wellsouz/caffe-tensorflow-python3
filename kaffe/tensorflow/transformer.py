@@ -58,7 +58,7 @@ class TensorFlowNode(object):
         if self.kwargs:
             args += [self.pair(k, v) for k, v in self.kwargs]
         # Set the node name
-        args.append(self.pair('name', self.node.name))
+        args.append(self.pair('name', str(self.node.name)))
         args = ', '.join(args)
         return '%s(%s)' % (self.op, args)
 
