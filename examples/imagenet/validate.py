@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 '''Validates a converted ImageNet model against the ILSVRC12 validation set.'''
-
+import sys
+import os.path as osp
 import argparse
 import numpy as np
 import tensorflow as tf
-import os.path as osp
-
-import models
 import dataset
+
+sys.path.append(osp.realpath(osp.join(osp.dirname(__file__), './models')))
+import helper as models
+
 
 
 def load_model(name):
