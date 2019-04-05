@@ -6,7 +6,7 @@ class NiN(Network):
              .conv(11, 11, 96, 4, 4, padding='VALID', name='conv1')
              .conv(1, 1, 96, 1, 1, name='cccp1')
              .conv(1, 1, 96, 1, 1, name='cccp2')
-             .max_pool(3, 3, 2, 2, name='pool1')
+             .max_pool(3, 3, 2, 2, name='pool0')
              .conv(5, 5, 256, 1, 1, name='conv2')
              .conv(1, 1, 256, 1, 1, name='cccp3')
              .conv(1, 1, 256, 1, 1, name='cccp4')
